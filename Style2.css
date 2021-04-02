@@ -1,0 +1,112 @@
+body
+{
+    display: block;
+    font-family: Raleway, sans-serif;
+    font-size: auto;
+}
+header
+{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.ReserviaLogo
+{
+display: flex;
+flex-direction: row;
+align-items: baseline;
+width: 100px;
+height: 50px;
+}
+.Navigation
+{
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+}
+.Pagehaut
+{
+    font-size: 1rem;
+    display: block;
+}
+.TitrePagehaut
+{ 
+    display: block;
+}
+.TextePagehaut
+{
+    display: block;
+}
+h1
+{
+font-size: 2em;
+margin-bottom: 0.5rem;
+}
+p
+{
+margin-top: 0;
+}
+
+nav ul
+{
+display: flex;
+list-style-type: none;
+flex-wrap: wrap;
+}
+
+nav li
+{
+    margin-right: 40px;
+}
+
+nav a
+{
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+a:hover
+{
+    text-decoration: overline;
+    color: blue;
+}
+.barrederecherche
+{
+    display: inline-flex;
+    max-width: 100%;
+    overflow: auto;
+}
+.mapmarker
+{
+    background-color: #F2F2F2;
+    padding: 1rem 1.25rem;
+    border-radius: 1rem 0 0 1rem;
+    text-align: center;
+}
+input
+{
+border-top: 1px #f2f2f2 solid;
+border-bottom: 1px #f2f2f2 solid;
+border-left: none;
+border-right: none;
+}
+.texterecherche
+{
+    font-weight: bold;
+    padding: 0 1.5rem;
+    width: 10rem;
+}
+.bouttonrecherche
+{
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 1rem 1rem 0;
+    padding-left:1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
