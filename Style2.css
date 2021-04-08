@@ -194,21 +194,24 @@ ul
     color: #0065FC;
 }
 
-.test
+.housing-section
 {
     display: grid;
     grid-template-columns: 6fr 3fr;
     column-gap: 2rem;
 }
-.main-housing
+.main-housing-grid
 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+.main-housing
+{
     background-color: #F2F2F2;
     border-radius: 1.5rem;
     padding: 2rem;
-    column-gap: 2rem;
-    row-gap: 2rem;
 }
 .main-housing-title
 {
@@ -219,12 +222,13 @@ ul
 }
 .header-housing-title
 {
-    margin: 0;
+    margin: 0 0 2rem 0;
 }
 .main-article
 {
     background-color: white;
     border-radius: 1.25rem;
+    padding: 0.4rem;
     cursor: pointer;
     box-sizing: border-box;
 }
@@ -255,14 +259,23 @@ ul
 }
 .star-list
 {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    margin: 0;
+    display: flex;
+    margin: 0 0.75rem ;   
 }
-.star
+.star-icon
 {
     color: #0065FC;
-    margin: 0 0.75rem 0.25rem 0.75rem;
+    padding: 0.2rem 0.2rem;
+    width: min-content;
+}
+.grey-star
+{
+    color: #d9d9d9;
+}
+.more
+{
+    text-align: start;
+    color: inherit;
 }
 .popular-housing
 {
@@ -282,10 +295,23 @@ ul
 }
 .popular-article
 {
+    display: flex;
+    flex-direction: row;
     background-color: white;
     border-radius: 1.25rem;
     cursor: pointer;
     box-sizing: border-box;
+    padding: 0.4rem;
 }
 
+.popular-picture
+{
+    padding: 0.2rem;
+    height: 7rem;
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
 
