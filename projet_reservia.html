@@ -1,50 +1,179 @@
-<!DOCTYPE html>
+<!DOCTYPE html>    
 <html>
     <head>
     <meta charset="utf-8">
-    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="Style2.css" />
-    <link rel="stylesheet" media="all and (max-width: 1024px)" href="StyleMini.css">
+    <link href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="test grid.css" />  
+    
+                                    <!--En-tête-->
+<header>
 
-        <body>
+    <img class="logo" src="images\logo\Reservia@3x.png" > </img>
+  <nav class="Navigation"> 
+    <ul>
+        <li class="hébergements"> <a href="#Hébergements">Hébergement</a>   </li>           
+        <li class="activités"> <a href="#Activités">Activités</a> </li>             
+        <li class="inscription"> <a href="#Inscription">S'inscrire</a> </li>                
+    </ul>
+</nav>
+</header>
 
-                                                <!--En-tête-->
+<main class="main">
+<section class="filters">
+    <header class="page-up">
+        <h1 class="title-h1">Trouvez votre hebergement pour des vacances de rêve</h1> 
+        <p class="TextePagehaut">En plein centre ville ou en pleine nature</p> 
+    </header> 
+ 
 
-            <section class="Recherche">
-                <header>
-                    <img class="ReserviaLogo" src="images\logo\Reservia@3x.png" > </img>
-                    <nav class="Navigation"> 
-                        <ul>
-                            <li> <a href="#Hébergements">Hébergements</a> </li>                                
-                            <li> <a href="#Activités">Activités</a> </li>                                
-                            <li> <a href="#Inscription">S'inscrire</a> </li>                                
-                        </ul>
-                    </nav>
-                </header> 
-            </section>
-
-                                                <!-- Titre principal-->
-
-            <section class="Filtres">
-                <header class="Pagehaut">
-                    <h1 class="TitrePagehaut">Trouvez votre hebergement pour des vacances de rêve</h1> 
-                    <p class="TextePagehaut">En plein centre ville ou en pleine nature</p> 
-                </header> 
-             
-
-                                                <!--Filtres-->
-                    
-            
-                <form class="barrederecherche" method="POST" action="#">
-                    <span class="mapmarker">
-                        <i class="fa fa-map-marker-alt" aria-hidden="true"></i>
-                    </span>
-                    <input class="texterecherche" type="text" name="Localisation" id="Localisation" placeholder="Marseille, France">
-                   <span class="bouttonrecherche">Rechercher</span>
-                </form>
-
-                
-
-
-            </section>
+                                    <!--Filtres-->
         
+
+    <form class="search-bar" method="POST" action="#">
+        <span class="mapmarker">
+            <i class="fa fa-map-marker-alt" aria-hidden="true"></i>
+        </span>
+        <input class="search-text" type="text" name="Localisation" id="Localisation" placeholder="Marseille, France">
+       <span class="button">Rechercher</span>
+    </form>
+
+    <ul class="filters-list">
+        <h2 class="title-list">Filtres</h2>
+        <li class="class-filter">
+            <span> 
+                <i class="fa fa-money-bill-wave wrap-icon" aria-hidden="true"></i>
+            </span>
+            <p class="text-filter">Économique</p> 
+        </li>
+
+        <li class="class-filter">
+            <span> 
+                <i class="fas fa-child wrap-icon" aria-hidden="true"></i>
+            </span>
+            <p class="text-filter">Familial</p>
+        </li>
+
+        <li class="class-filter"><span> 
+            <i class="fas fa-heart wrap-icon" aria-hidden="true"></i>
+        </span>
+        <p class="text-filter">Romantique</p>
+        </li>
+
+        <li class="class-filter"><span> 
+            <i class="fas fa-dog wrap-icon" aria-hidden="true"></i>
+            </span>
+            <p class="text-filter">Animaux autorisés</p>
+        </li>
+    </ul>
+    <div>
+        <span class="info-bar">
+            <i class="fas fa-info info" aria-hidden="true"></i>
+        
+        <p class="text-info">Plus de 500 logements sont disponibles dans cette ville</p>
+    </span>
+    </div>
+</section>
+
+                                    <!--Affichage des hébergements-->
+
+<section class="test">
+    <div class="main-housing" id="Hébergements">
+        <header class="main-housing-title">
+        <h2 class="header-housing-title">Hébergements à Marseille</h2>
+        </header>   
+        <article class="main-article">
+            <figure class="main-picture">
+                <img class="picture" src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
+                <figcaption>
+                    <h3 class="title-main-picture">Auberge de la Cannebière</h3>
+                </figcaption>
+                <p class="price-text">Nuit à partir de <span class="prix"> 25€</span>
+                </p>
+            </figure>
+            <ul class="star-list">
+                <li class="star-icon">
+                    <i class="fas fa-star star" aria-hidden="true"></i>
+                </li>
+            </ul>
+        </article>
+        <article class="main-article">
+            <ul>
+                <li>
+
+                </li>
+            </ul>
+        </article>
+        <article class="main-article">
+            <ul>
+                <li>
+
+                </li>
+            </ul>
+        </article>
+        <article class="main-article">
+            <ul>
+                <li>
+
+                </li>
+            </ul>
+        </article>
+        <article class="main-article">
+            <ul>
+                <li>
+
+                </li>
+            </ul>
+        </article>
+        <article class="main-article">
+            <ul>
+                <li>
+
+                </li>
+            </ul>
+        </article>
+    </div>
+
+    <aside class="popular-housing">
+        <h2 class="popular-housing-title">Les plus populaire
+            <i class="fas fa-chart-line"></i>
+        </h2>
+        
+
+        <article class="popular-article">
+            <figure class="popular-picture">
+                <img class="picture" src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
+                <figcaption>
+                    <h3 class="title-popular-picture">Auberge de la Cannebière</h3>
+
+                </figcaption>
+            </figure>
+        </article>
+
+        <article class="popular-article">
+            <figure class="popular-picture">
+                <img class="picture" src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
+                <figcaption>
+                    <h3 class="title-popular-picture">Auberge de la Cannebière</h3>
+
+                </figcaption>
+            </figure>
+        </article>
+
+        <article class="popular-article">
+            <figure class="popular-picture">
+                <img class="picture" src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
+                <figcaption>
+                    <h3 class="title-popular-picture">Auberge de la Cannebière</h3>
+                </figcaption>
+            </figure>
+            
+        </article>
+
+    </aside>
+
+
+
+
+</section>
+
+</main>
