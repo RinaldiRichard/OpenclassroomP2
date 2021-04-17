@@ -35,19 +35,10 @@
     .search-button {
         display: none;
     }
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .filters-list {
+        padding: 0;
     }
+    .title-list {
+        margin-top: 2rem;
+    }
+}
