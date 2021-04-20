@@ -1,0 +1,24 @@
+@media screen and (max-width: 1050px ) and (min-width: 601px) {
+    body {
+        padding: 0 2rem;
+    }
+    .popular-housing {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto repeat(3, 9rem);
+        grid-row: 1;     
+    }
+    .popular-housing-title {
+        grid-column: 1/-1;
+    }
+    .popular-article {
+        width: 100%;       
+    }
+    .housing-section {
+        row-gap: 2rem;
+        grid-template-columns: 1fr;
+    }
+    .activity-title-picture {
+        padding: 0;
+        text-align: center;
+    }
+}
