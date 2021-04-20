@@ -1,0 +1,114 @@
+@media screen and (max-width: 600px) {
+    body {
+        padding: 0;
+    }
+
+    header {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 50px;
+    grid-template-areas: "logo . inscription"
+                         "navigation navigation navigation"    
+    }
+    .logo {
+        padding-left: 2rem;
+    }
+    .navigation {
+        display: flex;   
+        grid-column: 1/5;
+        justify-content: space-between;    
+        border-bottom: 2px solid #f2f2f2;
+    }
+    nav {
+        flex: 1;
+    }
+    nav ul {
+        justify-content: space-evenly;
+        font-size: 0.8rem;
+    }
+    .main {
+        margin-top: 5rem;
+    }
+    .hébergements {
+        border-bottom: 2px solid #0065FC;
+    }
+    .hébergements:hover, .activités:hover {
+        border-top: none;   
+        border-bottom: 2px solid #0065FC;    
+    }
+    .inscription {
+        grid-area: inscription;
+        grid-column: 4/5;
+        margin: 0;
+        padding: 2rem 1.5rem 2rem 2rem;
+    }
+    .search-bar {
+        display: flex;
+        width: 100%;
+    }
+    @media screen and (max-width: 500px) {
+        .search-text {
+           flex: 1;
+        }        
+    }
+    .search-text {
+        width: 50%;
+    }
+    .search-button {
+        display: none;
+    }
+    .filters {
+        padding-left: 1rem;
+    }
+    .filters-list {
+        padding: 0 0 0 1rem;
+    }
+    .title-list {
+        margin-top: 2rem;
+        padding-left: 1rem;
+    }
+    .housing-section {
+        grid-template-columns: auto;
+    }
+    .main-housing {
+        background-color: white;
+    }
+    .main-housing-grid {
+        grid-template-columns: 1fr;
+    } 
+    .popular-housing {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto repeat(3, 10rem);  
+        grid-row: 1;      
+    }
+    .popular-housing-title {
+        margin: 0 0 1rem 0;
+    }
+    .more {
+        padding-top: 0.5rem;
+    }
+    .activity {
+        row-gap: 2rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        margin: 0;
+    }
+    .title-list-activity {
+        margin-bottom: 0;   
+    }
+    .activity-picture {
+        height: 100px;
+    }
+    .sixieme {
+        margin-top: 2rem;
+    }
+    .footer-list {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .li-footer {
+        width: 100%;
+        padding: 0 0 0 2rem;
+    }
+
+}
