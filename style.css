@@ -58,18 +58,18 @@ a {
     text-decoration: none;
   
 }
-.hébergements:hover {
+.hebergements {
     border-top: 3px #0065FC solid;
 }
-.activités {
+.activites {
     padding-left: 3rem;
 }
-.activités:hover {
+.activites:hover {
     border-top: #0065FC 3px solid;
 }
 .inscription {
     grid-area: inscription;
-    padding: 2rem 2rem 2rem 1rem;
+    padding: 2.3rem 2rem 2rem 1rem;
     align-self: flex-end;
 }
 .main {
