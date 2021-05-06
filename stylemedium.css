@@ -2,9 +2,10 @@
     body {
         padding: 0 2rem;
     }
-    .popular-housing {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto repeat(3, 9rem);
+    .popular-housing {        
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+        grid-template-rows: auto 9rem;
         grid-row: 1;     
     }
     .popular-housing-title {
@@ -13,6 +14,12 @@
     .popular-article {
         width: 100%;       
     }
+    .popular-article-title {
+        font-size: 95%;
+    }
+    .prix {
+        font-size: 90%;
+    }
     .housing-section {
         row-gap: 2rem;
         grid-template-columns: 1fr;
@@ -20,5 +27,42 @@
     .activity-title-picture {
         padding: 0;
         text-align: center;
+    }
+}
+@media screen and (max-width: 1000px) and (min-width:450px) {
+    .popular-housing {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto repeat(3, 9rem);
+    } 
+    .main-housing-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (max-width:591px){
+        .main-housing-grid {
+            grid-template-columns: 1fr;
+        }
+    } 
+    .popular-star {
+        margin-top: 3rem;
+    }
+    .activity {
+        font-size: 80%;
+    }
+    .title-medium {
+        margin-bottom: 1rem;
+    }
+    .footer-list {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .li-footer {
+        width: 100%;
+        padding: 0 0 0 2rem;
+    }
+}
+@media screen and (max-width:685px) and (min-width:451px) {
+    .title-main-picture {
+        font-size: 90%;
     }
 }
