@@ -1,46 +1,35 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 652px) {
     body {
-        padding: 0;
+        padding: 0 2rem;
     }
 
     header {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto 50px;
+    grid-template-columns: auto 1fr auto;
     grid-template-areas: "logo . inscription"
                          "navigation navigation navigation"    
     }
     .logo {
-        padding-left: 2rem;
+        padding-left: 0;
     }
-    .navigation {
-        display: flex;   
-        grid-column: 1/5;
-        justify-content: space-between;    
-        border-bottom: 2px solid #f2f2f2;
-    }
-    nav {
-        flex: 1;
-    }
-    nav ul {
-        justify-content: space-evenly;
-        font-size: 0.8rem;
+    .navigation {   
+        order: 2;
     }
     .main {
         margin-top: 5rem;
     }
-    .hebergements {
-        border-bottom: 2px solid #0065FC;
+    .hebergements, .activites {
+        border-bottom: 2px solid #f2f2f2;
         border-top: none;
+        flex: 1;
+        padding-left: 1rem;
     }
     .hebergements:hover, .activites:hover {
         border-top: none;   
         border-bottom: 2px solid #0065FC;    
     }
     .inscription {
-        grid-area: inscription;
-        grid-column: 4/5;
-        margin: 0;
-        padding: 2rem 1.5rem 2rem 2rem;
+        order: 1;
+        padding-right: 0;
     }
     .search-bar {
         display: flex;
@@ -84,6 +73,23 @@
     .popular-housing-title {
         margin: 0 0 1rem 0;
     }
+    .popular-article-title {
+        font-size: 0.9rem;
+    }
+    .popular-star {
+        margin: 2rem 0 0 0.25rem;
+        flex-wrap: wrap;
+        font-size: 80%;
+    }
+    .popular-description {
+        height: 100%;
+    }
+    .popular-picture {
+        height: 9rem;
+    }
+    .popular-text {
+        font-size: 85%;
+    }
     .more {
         padding-top: 0.5rem;
     }
@@ -98,6 +104,11 @@
     }
     .activity-picture {
         height: 100px;
+    }
+    @media screen and (max-width: 410px){
+        .activity-title-picture {
+            font-size: 0.8rem;
+        }
     }
     .sixieme {
         margin-top: 2rem;
