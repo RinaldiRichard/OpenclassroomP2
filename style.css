@@ -17,6 +17,9 @@ header{
     flex-wrap: wrap;
 
 }
+ul {
+    list-style-type: none;
+}
 a {
     color: inherit;
 }
@@ -33,24 +36,7 @@ a {
 .navigation{
     grid-area: navigation;
     display: flex;
-    align-items: flex-end;
-    flex-wrap: wrap;
-}
-nav ul {
-    display: flex;
-    align-items: flex-end;
-    list-style-type: none;
-    flex-wrap: wrap;
-    font-size: 1rem;
-    margin: 0;
-}
-li {
-    display: flex;
-    margin: 0;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 2rem;
-  
 }
 a {
     display: block;
@@ -59,18 +45,31 @@ a {
   
 }
 .hebergements {
+    padding: 2rem;
+    text-align: center;
+    border-top: 3px transparent solid;
+    border-bottom: 3px transparent solid;
+}
+.hebergements:hover {
     border-top: 3px #0065FC solid;
+    color: #0065FC;
 }
 .activites {
-    padding-left: 3rem;
+    padding: 2rem;
+    text-align: center;
+    border-top: 3px transparent solid;
+    border-bottom: 3px transparent solid;
 }
 .activites:hover {
     border-top: #0065FC 3px solid;
+    color: #0065FC;
 }
 .inscription {
     grid-area: inscription;
-    padding: 2.3rem 2rem 2rem 1rem;
+    padding: 2rem;
     align-self: flex-end;
+    font-weight: bold;
+    color: #0065FC;
 }
 .main {
     max-width: 1440px;
@@ -123,7 +122,7 @@ input {
     font-size: 1rem;
     cursor: pointer;
 }
-@media screen and (min-width:601px) {
+@media screen and (min-width:653px) {
     .loupe {
         display: none;
     } 
